@@ -1,0 +1,25 @@
+<!-- login.html -->
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <title>Přihlášení</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Přihlášení</h1>
+    <!-- Místo pro flash zprávy: můžeš je vykreslit pomocí PHP include nebo JS -->
+    <form action="/login.php" method="post" novalidate>
+      <label>Email
+        <input type="email" name="email" required>
+      </label>
+      <label>Heslo
+        <input type="password" name="password" required>
+      </label>
+      <button type="submit">Přihlásit se</button>
+    </form>
+    <p>Ještě nemáte účet? <a href="/register.html">Registrovat</a></p>
+  </div>
+</body>
+</html>

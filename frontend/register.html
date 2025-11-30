@@ -1,0 +1,28 @@
+<!-- register.html -->
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <title>Registrace</title>
+  <link rel="stylesheet" href="/css/styles.css"> <!-- tvůj CSS -->
+</head>
+<body>
+  <div class="container">
+    <h1>Registrace</h1>
+    <!-- zobrazování chyb nebo zpráv můžeš řešit přes GET param nebo session flash -->
+    <form action="/register.php" method="post" novalidate>
+      <label>Jméno
+        <input type="text" name="name" required>
+      </label>
+      <label>Email
+        <input type="email" name="email" required>
+      </label>
+      <label>Heslo
+        <input type="password" name="password" required minlength="8">
+      </label>
+      <button type="submit">Registrovat</button>
+    </form>
+    <p>Již máte účet? <a href="/login.html">Přihlásit se</a></p>
+  </div>
+</body>
+</html>
